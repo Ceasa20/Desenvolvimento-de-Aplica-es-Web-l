@@ -6,13 +6,13 @@ h1 {
   text-align: center;
 }
 
-<!--centralizador-->
+/* centralizador */
 main {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 1rem;
 }
-<!--gimenu-->
+/* gimenu */
 nav ul {
   list-style: none;
   padding: 0;
@@ -28,7 +28,7 @@ nav a {
 nav a:hover {
   color: #e4e7ec;
 }
-<!--separar_secoes-->
+/* separar_secoes */
 section {
   padding: 2rem 0;
   border-bottom: 1px solid #384054;
