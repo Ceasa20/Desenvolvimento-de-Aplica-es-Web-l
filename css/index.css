@@ -5,7 +5,9 @@ body {
 h1 {
   text-align: center;
 }
-
+main {
+  background-color: white;
+}
 nav {
   width: 100%;
   display: flex;
