@@ -6,22 +6,15 @@ h1 {
   text-align: center;
 }
 
-/* centralizador */
-/* nav ul {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}*/
+nav {
+  text-align: center;
+}
 
-/* menu centralizado */
 nav ul {
   list-style: none;
   padding: 0;
   display: flex;
   gap: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 1rem;
 }
 
 nav a {
