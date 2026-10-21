@@ -7,17 +7,21 @@ h1 {
 }
 
 /* centralizador */
-main {
+/* nav ul {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 1rem;
-}
-/* gimenu */
+}*/
+
+/* menu centralizado */
 nav ul {
   list-style: none;
   padding: 0;
   display: flex;
   gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 nav a {
