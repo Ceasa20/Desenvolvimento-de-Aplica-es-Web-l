@@ -1,0 +1,150 @@
+/* Box model: o tamanho declarado inclui padding e borda. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #1f2430;
+  color: #e4e7ec;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+/* Seletores e cascata: nav a tem prioridade sobre o seletor a. */
+a {
+  color: #a9d4ff;
+}
+
+a:focus-visible {
+  outline: 3px solid #fcd778;
+  outline-offset: 3px;
+}
+
+/* Posicionamento: o atalho fica no canto da tela e aparece ao receber foco. */
+.pular-conteudo {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 1;
+  padding: 0.75rem 1rem;
+  background-color: #fcd778;
+  color: #1f2430;
+  transform: translateY(calc(-100% - 1rem));
+}
+
+.pular-conteudo:focus {
+  transform: none;
+  outline-color: #fff;
+}
+
+.cabecalho,
+footer {
+  padding: 1.25rem 1rem;
+  background-color: #171b24;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+}
+
+h1,
+h2,
+h3,
+footer p {
+  margin: 0;
+}
+
+/* Flexbox: os itens quebram de linha conforme o espaço disponível. */
+nav ul,
+.tecnologias,
+.lista-projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+nav ul,
+.tecnologias {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul {
+  justify-content: center;
+  margin: 1rem 0 0;
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  background-color: #292f3e;
+  color: #e4e7ec;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background-color: #384054;
+}
+
+main {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+section {
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #475267;
+  border-radius: 0.75rem;
+  background-color: #262d3b;
+}
+
+/* O seletor de ID destaca a seção de apresentação. */
+#sobre {
+  border-left: 4px solid #a9d4ff;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+}
+
+.tecnologias img {
+  display: block;
+  object-fit: contain;
+}
+
+.projeto {
+  flex: 1 1 14rem;
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid #475267;
+  border-radius: 0.5rem;
+  background-color: #1f2430;
+  overflow-wrap: anywhere;
+}
+
+.projeto p {
+  margin-bottom: 0;
+}
+
+/* Responsividade: no celular, navegação e projetos ficam em uma coluna. */
+@media (max-width: 36rem) {
+  nav ul,
+  .lista-projetos {
+    flex-direction: column;
+  }
+
+  .projeto {
+    flex-basis: auto;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}

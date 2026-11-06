@@ -1,64 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<title>Portfólio</title>
-<link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio | Cesar Peixoto Silva</title>
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<header>
-<h1>Cesar Peixoto Silva</h1>
-  <nav>
-    <ul>
-      <li><a href="#sobre">Sobre mim</a></li>
-      <li><a href="#formacao">Formação</a></li>
-      <li><a href="#outras-formacoes">Outras formações</a></li>
-      <li><a href="#projetos">Projetos desenvolvidos</a></li>
-    </ul>
-  </nav>
-</header>
-<main>
-  
-<section id="sobre">
-<p>Sou estudante de Análise e Desenvolvimento de Sistemas (ADS), atualmente em busca de oportunidades para desenvolver meus conhecimentos na área de tecnologia.</p>
-<p>Atualmente estou construindo meus conhecimentos na área de tecnologia e programação. Tenho conhecimentos básicos em Python, Java, HTML e estou constantemente estudando e praticando para melhorar minhas habilidades.</p>
-<img src="assets/Mock design/py.png" alt="python"> <img src="assets/Mock design/java.png" alt="java"> <img src="assets/Mock design/html.png" alt="html">
-</section>
-<section id="formacao">
-<h2>Formação Análise e Desenvolvimento de Sistemas — [FAESA]</h2>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
 
-<p>Período: [4º período] <br>
-Previsão de conclusão: [2027]<br>
-Conhecimentos<br>
-Python: nível básico<br>
-Java: nível básico<br>
-HTML: nível básico<br>
-Git/GitHub: em aprendizado - <a href="https://github.com/Ceasa20/">Link GitHub</a><br>
-Lógica de programação<br>
-Orientação a objetos — em aprendizado<br></p>
-</section>
+  <header class="cabecalho">
+    <h1>Cesar Peixoto Silva</h1>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#outras-formacoes">Outras formações</a></li>
+        <li><a href="#projetos">Projetos desenvolvidos</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<section id="outras-formacoes">
-<h2>Outras formações:</h2>
-<strong>Técnico formado pelo IFES</strong><br>
-Técnico em Eletrotécnica <br>
-Técnico em Mecânica Industrial <br>
-</section>
+  <main id="conteudo" tabindex="-1">
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <p>Sou estudante de Análise e Desenvolvimento de Sistemas (ADS), atualmente em busca de oportunidades para desenvolver meus conhecimentos na área de tecnologia.</p>
+      <p>Atualmente estou construindo meus conhecimentos na área de tecnologia e programação. Tenho conhecimentos básicos em Python, Java, HTML e estou constantemente estudando e praticando para melhorar minhas habilidades.</p>
+      <ul class="tecnologias" aria-label="Tecnologias">
+        <li><img src="assets/Mock design/py.png" alt="Python" width="60" height="60"></li>
+        <li><img src="assets/Mock design/java.png" alt="Java" width="60" height="60"></li>
+        <li><img src="assets/Mock design/html.png" alt="HTML" width="60" height="60"></li>
+      </ul>
+    </section>
 
-<section id="projetos"> 
-<h2>Projetos desenvolvidos:</h2>
-<strong>Jogo do Labirinto</strong><br>
-Tecnologias: <img src="assets/Mock design/py.png" alt="python"><br>
-<strong>Pauta do professor</strong><br>
-Tecnologias: <img src="assets/Mock design/java.png" alt="java"><br>
-<strong>Programa para gestão de oficina de carros</strong><br>
-Tecnologias: Java<br>
-</section>
-</main>
+    <section id="formacao">
+      <h2>Formação</h2>
+      <h3>Análise e Desenvolvimento de Sistemas — FAESA</h3>
+      <p>4º período · Previsão de conclusão em 2027</p>
+      <h3>Conhecimentos</h3>
+      <ul>
+        <li>Python, Java e HTML em nível básico</li>
+        <li>Git e GitHub em aprendizado. <a href="https://github.com/Ceasa20/">Meu perfil no GitHub</a></li>
+        <li>Lógica de programação</li>
+        <li>Orientação a objetos em aprendizado</li>
+      </ul>
+    </section>
 
-<footer>
+    <section id="outras-formacoes">
+      <h2>Outras formações</h2>
+      <p>Formação técnica pelo IFES</p>
+      <ul>
+        <li>Técnico em Eletrotécnica</li>
+        <li>Técnico em Mecânica Industrial</li>
+      </ul>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos desenvolvidos</h2>
+      <div class="lista-projetos">
+        <article class="projeto">
+          <h3>Jogo do Labirinto</h3>
+          <p>Tecnologia: Python</p>
+        </article>
+        <article class="projeto">
+          <h3>Pauta do professor</h3>
+          <p>Tecnologia: Java</p>
+        </article>
+        <article class="projeto">
+          <h3>Programa para gestão de oficina de carros</h3>
+          <p>Tecnologia: Java</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
     <p>© 2026 Cesar Peixoto Silva</p>
-</footer>
-
+  </footer>
 </body>
-
 </html>
